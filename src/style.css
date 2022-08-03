@@ -1,5 +1,5 @@
 /* styles go here */
-.label {
+.item {
   display: block;
 }
 
@@ -7,10 +7,6 @@
   margin-bottom: 20px;
 }
 
-.label:not(:last-child) .input {
-  margin-bottom: 10px;
-}
-
-.radios {
+.item:not(:last-child) {
   margin-bottom: 10px;
 }

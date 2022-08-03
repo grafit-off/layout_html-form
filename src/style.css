@@ -1,1 +1,16 @@
 /* styles go here */
+.label {
+  display: block;
+}
+
+.fieldset:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.label:not(:last-child) .input {
+  margin-bottom: 10px;
+}
+
+.radios {
+  margin-bottom: 10px;
+}

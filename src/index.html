@@ -25,7 +25,7 @@
     >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <item class="item">
+        <label class="item">
           <span>Surname:</span>
           <input
             type="text"
@@ -33,8 +33,8 @@
             required
             autocomplete="off"
           >
-        </item>
-        <item class="item">
+        </label>
+        <label class="item">
           <span>Name:</span>
           <input
             type="text"
@@ -42,8 +42,8 @@
             required
             autocomplete="off"
           >
-        </item>
-        <item class="item">
+        </label>
+        <label class="item">
           <span>How old are You?</span>
           <input
             type="number"
@@ -52,35 +52,35 @@
             max="100"
             value="12"
           >
-        </item>
-        <item class="item">
+        </label>
+        <label class="item">
           <span>Full date of birth:</span>
           <input
             type="date"
             name="dateOfBirh"
             required
           >
-        </item>
-        <item class="item">
+        </label>
+        <label class="item">
           <span>I accept the term of the agreement</span>
           <input
             type="checkbox"
             name="term"
             required
           >
-        </item>
+        </label>
       </fieldset>
       <fieldset class="fieldset">
         <legend>Registration</legend>
-        <item class="item">
+        <label class="item">
           <span>E-mail:</span>
           <input
             type="email"
             placeholder="email@example.com"
             name="email"
           >
-        </item>
-        <item class="item">
+        </label>
+        <label class="item">
           <span>Password:</span>
           <input
             type="password"
@@ -89,77 +89,79 @@
             minlength="4"
             maxlength="32"
           >
-        </item>
+        </label>
       </fieldset>
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
         <div class="item">
           <span>Do you love cats?</span>
-          <item>
+          <label>
             <input
               type="radio"
               name="loveCats"
+              value="yes"
               required
             >
             <span>Yes</span>
-          </item>
-          <item>
+          </label>
+          <label>
             <input
               type="radio"
               name="loveCats"
+              value="no"
               required
             >
             <span>No</span>
-          </item>
+          </label>
         </div>
-        <item class="item">
+        <label class="item">
           <span>What is your favorite color?</span>
           <input
             type="color"
             name="favoriteColor"
           >
-        </item>
-        <item class="item">
+        </label>
+        <label class="item">
           <span>What time do you go to bed?</span>
           <input
             type="time"
             name="timeToSleep"
           >
-        </item>
-        <item class="item">
+        </label>
+        <label class="item">
           <span>What are your favorite brand of cars?</span>
           <select
             name="brandOfCar"
             required
             multiple
           >
-            <option value="BMW">BMW</option>
-            <option value="BMW">Audi</option>
-            <option value="BMW">Lada</option>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
           </select>
-        </item>
-        <item class="item">
+        </label>
+        <label class="item">
           <span>How do you rate our work?</span>
           <input
             type="range"
             name="workRate"
             value="0"
           >
-        </item>
+        </label>
       </fieldset>
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
-        <item class="item">
+        <label class="item">
           <span>Comments:</span>
           <textarea name="comment"></textarea>
-        </item>
-        <item class="item">
+        </label>
+        <label class="item">
           <span>Would you recommend us?</span>
           <select name="recomend">
             <option value="Yes">yes</option>
             <option value="No">no</option>
           </select>
-        </item>
+        </label>
       </fieldset>
       <button type="submit">Submit</button>
     </form>
